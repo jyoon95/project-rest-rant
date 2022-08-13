@@ -13,7 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 // Controllers & Routes
 app.use("/places", require("./controllers/places"));
 
-app.get("/", (req, res) => {
+// Create a homepage route.
+app.get("/", function (req, res) {
+  // This gets sent to the client
+  // (your web browser most likely!)
   res.render("home");
 });
 
