@@ -2,10 +2,19 @@ const React = require('react')
 const Def = require('../default')
 
 function show (data){
+    let message ='Validation Error'
+        if (data.message) {
+            message = (
+                <h4 className='alert-danger'>
+                    {data.message}
+                </h4>
+            )
+        }
     return (
         <Def>
             <main>
             <div className="row">
+                {message}
                 <div className="col-sm-6">
                     <img src={data.place.pic} alt={data.place.name} />
                     <h3>
