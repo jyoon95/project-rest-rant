@@ -6,6 +6,7 @@ h1 {
 nav {
     background-color: cornflowerblue;
     padding: 10px;
+    text-align: center;
 }
 
 nav ul {
@@ -37,6 +38,10 @@ main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
+}
+
+img{
+    image-resolution: 100px;
 }
 
 a:link {
